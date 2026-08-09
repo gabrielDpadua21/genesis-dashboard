@@ -140,8 +140,8 @@
 .footer-note{text-align:center; font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--muted); margin-top:10px; line-height:1.6;}
 
 /* Timeline */
-.streak-callout{display:flex; gap:18px; margin-bottom:14px;}
-.streak-box{flex:1; text-align:center; padding:12px; border-radius:10px; background:rgba(255,255,255,0.02); border:1px solid var(--border);}
+.streak-callout{display:flex; flex-wrap:wrap; gap:18px; margin-bottom:14px;}
+.streak-box{flex:1 1 120px; text-align:center; padding:12px; border-radius:10px; background:rgba(255,255,255,0.02); border:1px solid var(--border);}
 .streak-box-value{font-family:'JetBrains Mono',monospace; font-size:20px; font-weight:700;}
 .streak-box-label{font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-top:3px;}
 .timeline-scroll{overflow-x:auto; padding-bottom:6px;}

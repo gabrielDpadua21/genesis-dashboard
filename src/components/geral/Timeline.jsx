@@ -16,6 +16,7 @@ export function Timeline({ studyDates, streakAtual, numDays = 20 }) {
   }))
 
   const maiorStreak = calcMaiorStreak(days)
+  const diasEstudados = days.filter(d => d.hit === true).length
 
   return (
     <div className="panel">
@@ -28,6 +29,14 @@ export function Timeline({ studyDates, streakAtual, numDays = 20 }) {
         <div className="streak-box">
           <div className="streak-box-value cyan">{maiorStreak}</div>
           <div className="streak-box-label">Maior streak</div>
+        </div>
+        <div className="streak-box">
+          <div className="streak-box-value amber">{diasEstudados}</div>
+          <div className="streak-box-label">Dias estudados</div>
+        </div>
+        <div className="streak-box">
+          <div className="streak-box-value violet">{numDays}</div>
+          <div className="streak-box-label">Dias no período</div>
         </div>
       </div>
       <div className="timeline-scroll">
