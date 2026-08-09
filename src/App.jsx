@@ -6,6 +6,7 @@ import { MateriasTrilhaTab } from './components/materias/MateriasTrilhaTab'
 import { ConquistasTab } from './components/conquistas/ConquistasTab'
 import { LootsTab } from './components/loots/LootsTab'
 import { SemanalTab } from './components/semanal/SemanalTab'
+import { MonthlyTab } from './components/mensal/MonthlyTab'
 
 const TABS = [
   { id: 'geral', label: '📊 Geral', Component: GeralTab },
@@ -14,6 +15,7 @@ const TABS = [
   { id: 'conquistas', label: '🏆 Conquistas', Component: ConquistasTab },
   { id: 'loots', label: '🎲 Loots', Component: LootsTab },
   { id: 'semanal', label: '📅 Semanal', Component: SemanalTab },
+  { id: 'mensal', label: '📈 Mensal', Component: MonthlyTab },
 ]
 
 export default function App() {

@@ -54,7 +54,8 @@ src/
 │   ├── materias/          # abas Matérias Geral e Por Trilha
 │   ├── conquistas/        # aba Achievements (badges)
 │   ├── loots/              # aba Loots
-│   └── semanal/            # aba Semanal
+│   ├── semanal/            # aba Semanal
+│   └── mensal/             # aba Mensal (gráfico de barras por dia)
 ├── utils/format.js      # formatação (horas, acurácia, datas)
 └── styles/              # theme.css (tokens) + components.css
 ```
@@ -78,6 +79,29 @@ Banco de Dados Supabase"**. Resumo rápido:
   `error`, sucesso — seguir o padrão já usado em todas as `*Tab.jsx`
 - Comentários e nomes de variável em português (consistência com o resto
   do projeto — "Operação Genesis" é um projeto pessoal em PT-BR)
+
+## Componente Timeline (src/components/geral/Timeline.jsx)
+
+O `.streak-callout` tem **4 boxes** (não 2), nesta ordem fixa da
+esquerda pra direita: **Streak atual → Maior streak → Dias estudados →
+Dias no período**. Ao alterar esse componente, manter a ordem e reusar
+sempre as classes `.streak-box`/`.streak-box-value`/`.streak-box-label`
+já existentes em `components.css` — nunca criar estilo novo pra um box
+igual aos outros.
+
+## Aba Mensal (src/components/mensal/MonthlyTab.jsx)
+
+- Gráfico de barras é **sempre CSS puro** (divs com altura proporcional)
+  — o projeto nunca usa biblioteca de gráfico (recharts, chart.js, etc.),
+  mesma filosofia de "sem framework" do resto do projeto.
+- Sub-abas de mês são **dinâmicas**, geradas só a partir de meses que
+  realmente têm sessão registrada em `sessions` — nunca mostrar mês
+  vazio "adiantado".
+- Nome do mês sempre por extenso em português (ex: "Agosto 2026"), nunca
+  número.
+- O dia com mais horas do mês é destacado em `var(--violet)`; os demais
+  dias com sessão usam `var(--cyan)`; dias sem sessão ficam com barra
+  mínima em tom neutro (`var(--pending)` ou similar).
 
 ## O que NÃO fazer
 

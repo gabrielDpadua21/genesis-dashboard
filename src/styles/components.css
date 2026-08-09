@@ -155,3 +155,24 @@
 .timeline-dot.miss{background:transparent; border-color:var(--red); opacity:0.55;}
 .timeline-dot.pending{background:transparent; border-color:var(--amber); border-style:dashed;}
 .timeline-daynum{font-family:'JetBrains Mono',monospace; font-size:8.5px; color:var(--muted);}
+
+/* Mensal */
+.month-chart{
+  display:flex; align-items:flex-end; gap:3px; height:140px;
+  margin-top:16px; padding:28px 4px 0; border-bottom:1px solid var(--border);
+  overflow-x:auto;
+}
+.month-bar-col{position:relative; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; flex:1 0 8px; height:100%;}
+.month-bar{width:100%; max-width:10px; min-height:2px; border-radius:3px 3px 0 0; background:var(--cyan); opacity:0.75; transition:opacity 0.15s;}
+.month-bar.pico{background:var(--violet); opacity:1;}
+.month-bar-col:hover .month-bar{opacity:1;}
+.month-bar-daynum{font-family:'JetBrains Mono',monospace; font-size:7.5px; color:var(--muted); margin-top:4px;}
+.month-bar-col::after{
+  content:attr(data-tooltip);
+  position:absolute; top:0; left:50%; transform:translate(-50%, calc(-100% - 6px));
+  background:var(--card); border:1px solid var(--border); color:var(--text);
+  font-family:'JetBrains Mono',monospace; font-size:9px; white-space:nowrap;
+  padding:3px 7px; border-radius:6px; pointer-events:none; z-index:5;
+  opacity:0; transition:opacity 0.1s;
+}
+.month-bar-col:hover::after{opacity:1;}
