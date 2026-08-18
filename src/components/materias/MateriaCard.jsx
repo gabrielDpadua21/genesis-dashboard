@@ -5,27 +5,27 @@ export function MateriaCard({ materia }) {
 
   return (
     <div className="materia-card">
-      <div className="materia-top">
+      <div className="materia-info">
         <span className="cat-dot" style={{ background: CAT_COLORS[categoria] }} />
         <span className="materia-name">{nome}</span>
-        <span className="materia-cat-tag">{categoria}</span>
+        <span className="materia-cat-tag" style={{ color: CAT_COLORS[categoria] }}>{categoria}</span>
       </div>
       <div className="materia-stats-row">
         <div className="msr-item">
-          <div className="msr-label">Horas</div>
-          <div className="msr-value amber">{fmtHoras(horas_liquidas)}</div>
+          <span className="msr-label">Horas</span>
+          <span className="msr-value amber">{fmtHoras(horas_liquidas)}</span>
         </div>
         <div className="msr-item">
-          <div className="msr-label">Questões</div>
-          <div className="msr-value cyan">{questoes}</div>
+          <span className="msr-label">Questões</span>
+          <span className="msr-value cyan">{questoes}</span>
         </div>
         <div className="msr-item">
-          <div className="msr-label">Acertos</div>
-          <div className="msr-value violet">{acertos}</div>
+          <span className="msr-label">Acertos</span>
+          <span className="msr-value violet">{acertos}</span>
         </div>
         <div className="msr-item">
-          <div className="msr-label">Acurácia</div>
-          <div className="msr-value">{fmtAcuracia(acuracia_pct)}</div>
+          <span className="msr-label">Acurácia</span>
+          <span className="msr-value">{fmtAcuracia(acuracia_pct)}</span>
         </div>
       </div>
     </div>

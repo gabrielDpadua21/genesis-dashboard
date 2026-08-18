@@ -9,10 +9,12 @@ export function GuiaSessaoPage() {
   const [fluxoAtivo, setFluxoAtivo] = useState('exploracao')
 
   return (
-    <>
-      <Link to="/" className="guia-voltar">← Voltar pra dashboard</Link>
-      <div className="eyebrow" style={{ marginTop: 10 }}>Referência de Processo</div>
-      <div className="name" style={{ fontSize: 20, marginBottom: 16 }}>📖 Guia da Sessão</div>
+    <div className="tab-content">
+      <div className="page-header">
+        <Link to="/" className="guia-voltar">← Voltar pra dashboard</Link>
+        <div className="eyebrow" style={{ marginTop: 10 }}>Referência de Processo</div>
+        <div className="name" style={{ fontSize: 20 }}>📖 Guia da Sessão</div>
+      </div>
 
       <RitualEntrada />
 
@@ -30,6 +32,6 @@ export function GuiaSessaoPage() {
       <FluxoSessao fluxo={FLUXOS[fluxoAtivo]} />
 
       <LegendaCores />
-    </>
+    </div>
   )
 }
