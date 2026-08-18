@@ -15,8 +15,8 @@
 
 ## Entregável 2 — Página "Guia da Sessão"
 
-7. [ ] Página com toggle 🧭 Exploração (5 passos) / ⚔️ Contra-Ataque (6 passos)
-8. [ ] Legenda de cores fixa (5 cores) + bloco "Ritual de Entrada" no topo
+7. [x] Página com toggle 🧭 Exploração (5 passos) / ⚔️ Contra-Ataque (6 passos)
+8. [x] Legenda de cores fixa (5 cores) + bloco "Ritual de Entrada" no topo
 
 ## Checklist final
 

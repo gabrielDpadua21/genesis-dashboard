@@ -211,3 +211,33 @@
 .portal-meta{font-family:'JetBrains Mono',monospace; font-size:9.5px; color:var(--muted);}
 
 .ciclo-geral-summary{font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--muted); margin-top:8px; text-align:center;}
+
+.guia-link{
+  display:block; text-align:center; font-family:'JetBrains Mono',monospace; font-size:11px;
+  font-weight:700; color:var(--violet); text-decoration:none; padding:12px; border:1px solid var(--border);
+  border-radius:12px; margin-top:2px;
+}
+.guia-link:hover{border-color:var(--violet);}
+
+/* Guia da Sessão */
+.guia-voltar{
+  display:inline-block; font-family:'JetBrains Mono',monospace; font-size:10.5px;
+  color:var(--muted); text-decoration:none;
+}
+.guia-voltar:hover{color:var(--cyan);}
+.ritual-row{display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:11px;}
+.ritual-item{display:flex; align-items:center; gap:8px; color:var(--text);}
+.ritual-arrow{color:var(--muted);}
+.guia-steps{list-style:none; display:flex; flex-direction:column; gap:9px;}
+.guia-step{display:flex; align-items:flex-start; gap:10px;}
+.guia-step-num{
+  flex-shrink:0; width:20px; height:20px; border-radius:50%; background:rgba(140,127,255,0.15);
+  color:var(--violet); font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700;
+  display:flex; align-items:center; justify-content:center; margin-top:1px;
+}
+.guia-step-text{font-size:12.5px; line-height:1.5;}
+.guia-resultado{
+  margin-top:14px; padding-top:12px; border-top:1px solid var(--border);
+  font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--cyan); line-height:1.5;
+}
+.legend-wrap{flex-wrap:wrap; row-gap:10px;}

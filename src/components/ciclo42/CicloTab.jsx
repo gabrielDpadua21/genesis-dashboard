@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useFaseVolume } from '../../hooks/useFaseVolume'
 import { useGrupoStats } from '../../hooks/useGrupoStats'
 import { usePortalPendente } from '../../hooks/usePortalPendente'
@@ -25,6 +26,7 @@ export function CicloTab() {
       <GrupoProgress grupos={grupos} />
       <PortalPendente pendentes={pendentes} />
       <CicloGeral statusList={cicloStatus} />
+      <Link to="/guia" className="guia-link">📖 Ver Guia da Sessão</Link>
     </>
   )
 }

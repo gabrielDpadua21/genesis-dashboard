@@ -30,9 +30,11 @@ assim sem olhar o código existente.
 | Fonte de dado numérico/label | JetBrains Mono |
 
 Paleta de categoria (usada em blocos de conteúdo/leitura ativa, se algum
-componente novo precisar): conceito verde `#DFF5E3`, definição azul
-`#DCEEFB`, exemplo laranja `#FDE9D9`, situação roxo `#E8DFF5`, atenção
-amarelo `#FBF3D3`.
+componente novo precisar): conceito verde `#4ADE80`, definição azul
+`#60A5FA`, exemplo laranja `#FB923C`, situação roxo `#C084FC`, atenção
+amarelo `#FDE047`. Versão viva/saturada — os tons pastel originais
+(`#DFF5E3` etc.) ficavam apagados contra o fundo escuro do app; ajustado
+na implementação da Legenda de Cores em `specs/ciclo-42-dashbord/`.
 
 ## Estrutura de arquivos **[a confirmar contra o repo real]**
 
