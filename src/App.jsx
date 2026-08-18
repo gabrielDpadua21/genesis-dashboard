@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { TabBar } from './components/layout/TabBar'
 import { GeralTab } from './components/geral/GeralTab'
+import { CicloTab } from './components/ciclo42/CicloTab'
 import { MateriasGeralTab } from './components/materias/MateriasGeralTab'
 import { MateriasTrilhaTab } from './components/materias/MateriasTrilhaTab'
 import { ConquistasTab } from './components/conquistas/ConquistasTab'
@@ -10,6 +11,7 @@ import { MonthlyTab } from './components/mensal/MonthlyTab'
 
 const TABS = [
   { id: 'geral', label: '📊 Geral', Component: GeralTab },
+  { id: 'ciclo42', label: '🔄 Ciclo 4.2', Component: CicloTab },
   { id: 'materias-geral', label: '📚 Matérias Geral', Component: MateriasGeralTab },
   { id: 'materias-trilha', label: '🗂️ Por Trilha', Component: MateriasTrilhaTab },
   { id: 'conquistas', label: '🏆 Conquistas', Component: ConquistasTab },
